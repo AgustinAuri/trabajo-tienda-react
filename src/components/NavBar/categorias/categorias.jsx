@@ -7,7 +7,10 @@ const Categorias = () => {
             <a className="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li className="nav-item">
-            <a className="nav-link" href="#">Link</a>
+            <a className="nav-link" href="#">Tienda</a>
+            </li>
+            <li className="nav-item">
+            <a className="nav-link" href="#">Contactanos</a>
             </li>
         </ul>
         </div>
