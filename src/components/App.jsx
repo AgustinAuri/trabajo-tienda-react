@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './NavBar/NavBar';
 import ItemListContainer from './ItemLIstContainer/ItemListContainer';
-import ItemCount from './itemCount/itemCount';
+
 
 
 function App() {
@@ -9,7 +9,6 @@ function App() {
     <>
       <Navbar/>
       <ItemListContainer greenting={"hoola"}/>
-      <ItemCount/>
     </>
   );
 }
