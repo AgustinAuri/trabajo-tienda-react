@@ -3,7 +3,8 @@ import ItemList from "../ItemList/ItemList";
 import consultarBDD from "../../assets/funciones";
 
 const ItemListContainer = ({greenting}) => {
-    const [productos, setProductos] = useState ([])
+    const [productos, setProductos] = useState ([]);
+    
     useEffect(() => {
       consultarBDD () .then(productList => {
         const cardProductos = ItemList ({productList})
