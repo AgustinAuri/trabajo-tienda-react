@@ -1,14 +1,16 @@
 import './App.css';
 import Navbar from './NavBar/NavBar';
 import ItemListContainer from './ItemLIstContainer/ItemListContainer';
+import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
 
 
-
-function App() {
+const App = () => {
+  
   return (
     <>
       <Navbar/>
-      <ItemListContainer greenting={"hoola"}/>
+      <ItemListContainer/>
+      <ItemDetailContainer/>
     </>
   );
 }

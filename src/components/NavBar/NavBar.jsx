@@ -2,7 +2,9 @@ import Categorias from "./categorias/categorias";
 import CarWidget from "../CarWidget/CarWidget";
 
 const Navbar = () => {
+
     return (
+
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">Electro Tienda</a>
@@ -11,10 +13,11 @@ const Navbar = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <Categorias/>
-                </div>
                     <CarWidget/>
+                </div>
             </div>
         </nav>
+
     );
 }
 

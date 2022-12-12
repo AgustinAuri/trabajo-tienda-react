@@ -8,12 +8,23 @@
 }
 
 .cardProducto {
-    width: 18 rem;
+    width: 18rem;
     margin: 4px;
+    background-color: hsl(0, 0%, 97%);
+}
+
+.cardBody {
+    background-color: white;
+    margin-bottom: 3px;
+    text-align: center;
 }
 
 .cardProductos {
     margin: 4px;
-    align-items: center;
+    align-items:center;
     justify-content: center;
+}
+.itemDetail {
+    max-width: 540 px;
+    margin-top: 20px;
 }
