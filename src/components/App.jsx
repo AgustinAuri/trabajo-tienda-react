@@ -1,4 +1,7 @@
 import './App.css';
+
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+
 import Navbar from './NavBar/NavBar';
 import ItemListContainer from './ItemLIstContainer/ItemListContainer';
 import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
@@ -6,9 +9,14 @@ const App = () => {
 
   return (
     <>
-      <Navbar/>
-      <ItemListContainer/>
-      <ItemDetailContainer/>
+      <BrowserRouter>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<ItemListContainer/>}/>
+          <Route path='/product/:id' element={<ItemDetailContainer/>}/>
+          <Route path='/category/:category' element={<ItemListContainer/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
