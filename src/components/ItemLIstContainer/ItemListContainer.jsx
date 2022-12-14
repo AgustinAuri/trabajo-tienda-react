@@ -4,7 +4,7 @@ import ItemList from "../ItemList/ItemList";
 import { consultarBDD } from "../../assets/funciones";
 
 const ItemListContainer = () => {
-  console.log(ItemListContainer)
+
     const [productos, setProductos] = useState ([]);
     const {category} = useParams()
     
@@ -12,14 +12,20 @@ const ItemListContainer = () => {
       if(category){
         consultarBDD('../json/productos.json').then(products => {
           const productsList= products.filter(prod => prod.stock > 0).filter(prod => prod.idCategoria === parseInt(category))
-          const cardProductos = ItemList({productsList})
-          setProductos(cardProductos)
+          console.log(productsList)
+          const cardProductos = ItemList({productsList}) 
+console.log(cardProductos)
+           setProductos(cardProductos)  
+          
       })
       }else{
         consultarBDD('./json/productos.json').then(products => {
           const productsList= products.filter(prod => prod.stock > 0)
-          const cardProductos = ItemList({productsList})
-          setProductos(cardProductos)
+          console.log(productsList)
+        const cardProductos = ItemList({productsList}) 
+console.log(cardProductos)
+     setProductos(cardProductos) 
+
       })
       }
 
@@ -29,7 +35,7 @@ const ItemListContainer = () => {
     return (
 
           <div className="row cardProductos">
-              {productos}            
+              {productos}      
             </div> 
 
     );
