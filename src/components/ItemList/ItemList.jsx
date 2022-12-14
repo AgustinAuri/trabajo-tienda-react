@@ -1,6 +1,7 @@
 import Item from "../Item/Item";
 
 const ItemList = ({productList}) => {
+
     return (
         <>
             {productList.map(producto => <Item key={producto.id} prod={producto}/>)}
@@ -9,3 +10,4 @@ const ItemList = ({productList}) => {
 }
 
 export default ItemList;
+console.log(ItemList)

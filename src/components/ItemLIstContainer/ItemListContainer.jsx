@@ -4,7 +4,7 @@ import ItemList from "../ItemList/ItemList";
 import { consultarBDD } from "../../assets/funciones";
 
 const ItemListContainer = () => {
-  
+  console.log(ItemListContainer)
     const [productos, setProductos] = useState ([]);
     const {category} = useParams()
     
