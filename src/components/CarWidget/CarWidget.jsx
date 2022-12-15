@@ -2,12 +2,15 @@ import {Link} from "react-router-dom"
 
 const CarWidget = () => {
     return (
-            <ul className="navbar-nav me-auto">
-                <li className="nav-link">
-                    <button className="btn btn-dark">🛒</button>
-                </li>
-                <p>0</p>
-            </ul>
+        <>
+            <button className="btn btn-dark carWidget">
+                <Link to={'/cart'} className="nav-link">
+                <i className="fas fa-shopping-cart fa-lg"></i>
+                <samp className="cantCarrito">0</samp>
+                </Link>
+
+            </button>
+        </>
     );
 }
 

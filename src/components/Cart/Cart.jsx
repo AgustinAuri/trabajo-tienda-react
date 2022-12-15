@@ -4,7 +4,7 @@ const Cart = () => {
     return (
         <div>
             <h1>Imagen Producto</h1>
-            <button className="btn btn-dark"><Link to ={'/checkout'}>Finalizar compra</Link></button>
+            <button className="btn btn-dark"><Link className="botonFinalizar" to ={'/checkout'}>Finalizar compra</Link></button>
         </div>
     );
 }

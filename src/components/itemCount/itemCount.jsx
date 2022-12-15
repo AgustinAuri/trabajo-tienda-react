@@ -1,11 +1,13 @@
 import {useState} from 'react';
 
-const ItemCount = ({stock}) => {
-    const [contador, setContador] = useState (1);
+const ItemCount = ({inicial, stock, onAdd}) => {
+    const [contador, setContador] = useState (inicial);
 
     const sumar = () => contador < stock && setContador(contador + 1)
 
     const restar = () => contador > 1 && setContador(contador - 1)
+
+    const agregarAlCarrito = () => onAdd(contador)
 
     return (
         <div>

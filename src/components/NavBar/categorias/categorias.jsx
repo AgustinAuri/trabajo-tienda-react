@@ -8,13 +8,13 @@ const Categorias = () => {
                 <button className=" btn transparent"><Link className="nav-link" to={"/"}>Home</Link></button>
             </li>
             <li className="nav-item">
-                <button className=" btn transparent"><Link className="nav-link" to={"/category/1"}>Tv</Link></button>
+                <button className=" btn transparent"><Link className="nav-link" to={"/category/1"}>Notebook</Link></button>
             </li>
             <li className="nav-item">
                 <button className=" btn transparent"><Link className="nav-link" to={"/category/2"}>Celular</Link></button>
             </li>
             <li className="nav-item">
-                <button className=" btn transparent"><Link className="nav-link" to={"/category/3"}>Notebook</Link></button>
+                <button className=" btn transparent"><Link className="nav-link" to={"/category/3"}>Tv</Link></button>
             </li>
             <li className="nav-item">
                 <button className=" btn transparent"><Link className="nav-link" to={"/category/4"}>Auriculares</Link></button>

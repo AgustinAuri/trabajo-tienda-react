@@ -14,7 +14,6 @@ const ItemListContainer = () => {
           const productsList= products.filter(prod => prod.stock > 0).filter(prod => prod.idCategoria === parseInt(category))
           console.log(productsList)
           const cardProductos = ItemList({productsList}) 
-console.log(cardProductos)
            setProductos(cardProductos)  
           
       })
@@ -23,7 +22,6 @@ console.log(cardProductos)
           const productsList= products.filter(prod => prod.stock > 0)
           console.log(productsList)
         const cardProductos = ItemList({productsList}) 
-console.log(cardProductos)
      setProductos(cardProductos) 
 
       })
