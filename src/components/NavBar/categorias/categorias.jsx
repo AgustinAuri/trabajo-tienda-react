@@ -20,7 +20,7 @@ const Categorias = () => {
                 <button className=" btn transparent"><Link className="nav-link" to={"/category/4"}>Auriculares</Link></button>
             </li>
             <li className="nav-item">
-                <button className="btn transparent"><Link className="nav-link" >Contactanos </Link></button>
+                <button className="btn transparent"><Link className="nav-link" to={"/contact"} >Contactanos </Link></button>
             </li>
         </ul>
         </div>
