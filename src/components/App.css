@@ -25,14 +25,39 @@
     text-align: center;
 }
 
+img {
+    margin-top:3px;
+}
+
 .cardProductos {
     margin: 4px;
     align-items:center;
     justify-content: center;
 }
+
+.cartWidget {
+    margin-right: 40px;
+    color:white;
+}
+
+.nav-item {
+    margin: 10px;
+}
+
+.cantCarrito {
+    position: relative;
+    left: 15%;
+}
+
 .itemDetail {
     max-width: 540 px;
     margin-top: 20px;
+}
+
+.imgBody {
+    display:block;
+    margin:auto;
+    max-height: 100%;
 }
 
 .botonFinalizar {
@@ -42,4 +67,20 @@
 .darkMode {
     background-color:rgb(56, 56, 56);
     color:gainsboro;
+}
+
+.cartContainer {
+    margin-top:3%;
+    margin-left: 26.5%;
+}
+
+.divButtons button{
+    margin:4px;
+}
+
+@media (max-width:991px) {
+    .cartWidget {
+        color:white;
+        margin-bottom: 10px;
+    }
 }
