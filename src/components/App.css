@@ -19,6 +19,12 @@
     text-align: center;
 }
 
+.cardBodyDark {
+    background-color: hsl(0, 0%, 33%);
+    margin-bottom: 3px;
+    text-align: center;
+}
+
 .cardProductos {
     margin: 4px;
     align-items:center;
@@ -31,4 +37,9 @@
 
 .botonFinalizar {
     text-decoration-color: white;
+}
+
+.darkMode {
+    background-color:rgb(56, 56, 56);
+    color:gainsboro;
 }
